@@ -10,7 +10,7 @@ const analytics = Analytics({
   app: 'My portfolio',
   plugins: [
     googleAnalytics({
-      trackingId: 'UA-170087079-1'
+      trackingId: process.env.REACT_APP_GA_CODE
     })
   ]
 })
