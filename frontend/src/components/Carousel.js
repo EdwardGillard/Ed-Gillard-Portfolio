@@ -15,7 +15,7 @@ function Carousel(props) {
   return (
     <div className="projects__display">
       <div className="project__header">
-        <h5>{project.title}</h5>
+        <h1>{project.title}</h1>
         <div className="project__technologies">
           {project.technologies.map(tech => <p key={tech}>{tech}</p>)}
         </div>

@@ -62,6 +62,8 @@ function Projects() {
   ])
   const [count, setCount] = React.useState(0)
 
+
+  //! use count state to cycle through hardcoded projects
   const nextProject = () => {
     if (count < projects.length - 1) {
       setCount(count + 1)
@@ -70,6 +72,7 @@ function Projects() {
     }
   }
 
+  //! use count state to cycle backwards through hardcoded projects
   const lastProject = () => {
     if (count > 0) {
       setCount(count - 1)
@@ -82,7 +85,7 @@ function Projects() {
     <>
       <div id="projects" className="projects__container">
         <div className="projects__directions" >
-        {count > 0 && <h1 onClick={lastProject}> {'<'} </h1>}
+          {count > 0 && <h1 onClick={lastProject}> {'<'} </h1>}
         </div>
         <div className="projects__main__display" >
           <Swipeable onSwipedRight={lastProject} onSwipedLeft={nextProject} preventDefaultTouchmoveEvent={true}>
@@ -92,7 +95,7 @@ function Projects() {
           </Swipeable>
         </div>
         <div className="projects__directions" onClick={nextProject}>
-        {count < projects.length - 1 && <h1> {'>'} </h1>}
+          {count < projects.length - 1 && <h1> {'>'} </h1>}
         </div>
       </div>
     </>
