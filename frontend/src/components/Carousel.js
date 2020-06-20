@@ -35,7 +35,7 @@ function Carousel(props) {
         <p>{project.description}</p>
       </div>
       <div className="buttons">
-        <a href={project.github} target="_blank" rel="noopener noreferrer"><button>View Github</button></a>
+        <a href={project.github} target="_blank" rel="noopener noreferrer"><button>View Github Repo</button></a>
         <a href={project.deployedLink} target="_blank" rel="noopener noreferrer"><button>{project.visitOrPlay} {project.deployedName}</button></a>
       </div>
     </div>
