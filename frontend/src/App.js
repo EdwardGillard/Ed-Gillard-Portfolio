@@ -6,23 +6,35 @@ import AboutMe from './components/AboutMe'
 import Projects from './components/Projects'
 import ContactFooter from './components/ContactFooter'
 
-
-
 function App() {
   return (
-    <>
+    <div className="Main">
       <Navbar />
+      <div className="seperator">
+        <hr id="one" />
+        <hr id="two" />
+        <hr id="three" />
+      </div>
       <AboutMe />
-      <hr/>
-      <hr />
+      <div className="seperator">
+        <hr id="one" />
+        <hr id="two" />
+        <hr id="three" />
+      </div>
+      <Projects />
+      <div className="seperator">
+        <hr id="one" />
+        <hr id="two" />
+        <hr id="three" />
+      </div>
       <Experience />
-      <hr/>
-      <hr />
-      <Projects id="projects"/>
-      <hr/>
-      <hr />
+      <div className="seperator">
+        <hr id="one" />
+        <hr id="two" />
+        <hr id="three" />
+      </div>
       <ContactFooter />
-    </>
+    </div>
   )
 }
 
