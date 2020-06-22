@@ -38,6 +38,7 @@ function AboutMe() {
               <li>Insomnia</li>
               <li>TablePlus</li>
               <li>VS code</li>
+              <li>Robo 3T</li>
             </ul>
           </div>
         </div>
