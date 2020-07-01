@@ -4,5 +4,9 @@
   "main": "index.js",
   "repository": "git@github.com:EdwardGillard/Ed-Gillard-Portfolio.git",
   "author": "Edward Gillard",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "netlify": "^4.3.2",
+    "netlify-cli": "^2.54.0"
+  }
 }
