@@ -53,8 +53,8 @@ function Projects() {
       github: 'https://github.com/EdwardGillard/SEI-project-one-Game',
       deployedLink: 'https://edwardgillard.github.io/SEI-project-one-Game/',
       deployedName: 'Drake Game',
-      display: 'https://res.cloudinary.com/dsz79ulhu/image/upload/v1592579297/portfolio/Drake2_okpwj0.png',
-      media: ['https://res.cloudinary.com/dsz79ulhu/image/upload/v1592579297/portfolio/Drake2_okpwj0.png', 'https://res.cloudinary.com/dsz79ulhu/image/upload/v1592579297/portfolio/Drake1_ntzfbp.png', 'https://res.cloudinary.com/dsz79ulhu/image/upload/v1592579297/portfolio/Drake3_iyxlua.png'],
+      display: 'https://res.cloudinary.com/dsz79ulhu/image/upload/v1592579297/portfolio/Drake2.png',
+      media: ['https://res.cloudinary.com/dsz79ulhu/image/upload/v1592579297/portfolio/Drake2.png', 'https://res.cloudinary.com/dsz79ulhu/image/upload/v1592579297/portfolio/Drake1_ntzfbp.png', 'https://res.cloudinary.com/dsz79ulhu/image/upload/v1592579297/portfolio/Drake3_iyxlua.png'],
       description: 'A solo, interactive front-end only game built in 8 days using HTML, CSS and JavaScript. An alternative twist to arcade classic Snake. Deployed using GitHub Pages.',
       technologies: ['JavaScript ES6', 'CSS3', 'HTML 5'],
       visitOrPlay: 'Play'

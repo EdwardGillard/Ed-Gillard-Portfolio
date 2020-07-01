@@ -31,13 +31,17 @@ function AboutMe() {
           </div>
           <div className="skills__right">
             <ul>
-              <li>GitHub</li>
               <li>Git</li>
+              <li>GitHub</li>
+              <li>Yarn</li>
+              <li>npm</li>
+              <li>Pip</li>
               <li>Heroku</li>
               <li>Netlify</li>
               <li>Insomnia</li>
-              <li>TablePlus</li>
               <li>VS code</li>
+              <li>Google Chrome Dev Tools</li>
+              <li>TablePlus</li>
               <li>Robo 3T</li>
             </ul>
           </div>

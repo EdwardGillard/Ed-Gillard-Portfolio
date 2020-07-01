@@ -1,12 +1,12 @@
 {
   "name": "react-testing",
-  "homepage": "edgillard.co.uk",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@analytics/google-analytics": "^0.4.0",
     "analytics": "^0.5.1",
     "eslint-plugin-react": "^7.18.3",
+    "netlify-cli": "^2.54.0",
     "node-sass": "^4.13.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
