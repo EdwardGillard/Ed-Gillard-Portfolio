@@ -8,6 +8,7 @@ html {
 
 body {
   margin: 0 auto;
+  width: 100%;
 }
 
 h1 {
@@ -20,10 +21,12 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 .seperator {
   width: 100%;
+  margin: 0;
   #one {
     width: 90%;
   }
@@ -35,15 +38,11 @@ h1 {
   }
 }
 
-.container {
-  height: 50vh;
-}
-
 //! ********* Nav *********
 
 nav {
-  width: 100%;
   background-color: white;
+  width: 100%;
   height: 2.5rem;
   top: 0;
   left: 0;
@@ -74,8 +73,8 @@ nav {
 //! ********* About ***********
 
 .about__container {
-  height: 60vh;
   width: 90%;
+  margin: 2rem 0 2rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,42 +127,46 @@ nav {
 //! ********* Projects *********
 
 .projects__container {
-  height: 110vh;
-  margin: 0;
-  min-width: 99vw;
+  margin: 2rem 0 2rem 0;
+  width: 100%;
   color: white;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   .projects__directions {
-    width: 15vw;
-    max-height: 40vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     text-align: center;
+    width: 15%;
     h1 {
+      width: 100%;
       font-size: 7rem;
       text-decoration: none;
       font-weight: 500;
+      animation: colorChange ease-in 2s infinite;
       &:hover {
-        color: red;
         animation: none;
+        color: red;
       }
     }
   }
   .projects__main__display {
     display: flex;
-    justify-content: center;
-    max-width: 70vw;
+    align-items: flex-start;
+    width: 70%;
     .projects__display {
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: space-evenly;
       .project__header {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
+        max-width: 100%;
         h5 {
           font-size: 2em;
           text-decoration: underline lightgray;
@@ -171,10 +174,10 @@ nav {
         }
         .project__technologies {
           display: flex;
-          width: 100%;
-          justify-content: center;
+          justify-content: space-evenly;
+          max-width: 100%;
           p {
-            margin: 1.5em;
+            margin: 0.25rem;
           }
         }
       }
@@ -182,9 +185,9 @@ nav {
         display: flex;
         text-align: center;
         justify-content: center;
-        max-width: 100%;
+        min-width: 100%;
         img {
-          height: 325px;
+          max-height: 325px;
           border: 4px solid white;
         }
       }
@@ -204,7 +207,7 @@ nav {
         }
       }
       .project__description {
-        width: 90%;
+        min-width: 100%;
         text-align: center;
         font-family: "Yanone Kaffeesatz", sans-serif;
         font-weight: 300;
@@ -233,7 +236,7 @@ nav {
 //! ********* Experience *********
 
 .experience__container {
-  height: 35vh;
+  margin: 2rem 0 2rem 0;
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -264,13 +267,12 @@ nav {
 
 //! ********* Footer *********
 .footer__container {
-  height: 11rem;
+  margin: 2rem 0 2rem 0;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 2rem;
   .logos {
     width: 50%;
     display: flex;
@@ -281,7 +283,19 @@ nav {
   }
 }
 
-@media only screen and (max-width: 770px) {
+//! ********* Keyframes ********
+@keyframes colorChange {
+  0%,
+  100% {
+    color: white;
+  }
+  50% {
+    color: grey;
+  }
+}
+
+//! ********* Media Qs ********
+@media only screen and (max-width: 800px) {
   html {
     font-size: 16px;
   }
@@ -289,11 +303,28 @@ nav {
     width: 100%;
   }
   nav {
-    margin-bottom: 10px;
+    width: 100%;
     .navbar-item {
-      font-size: 16px;
+      font-size: 14px;
       margin: 0;
       padding: 5px;
+    }
+  }
+  .seperator {
+    display: none;
+  }
+  .about__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 90%;
+    max-width: 100%;
+    .about__column-left {
+      width: 100%;
+    }
+    .about__column-right {
+      width: 100%;
+      align-items: center;
     }
   }
   .logos img {
@@ -301,28 +332,36 @@ nav {
     width: 50px;
   }
   .projects__container {
-    width: 90%;
-    height: 84vh;
-    .projects__directions h1 {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .projects__directions {
       display: none;
     }
     .projects__main__display {
-      min-width: 100%;
+      width: 90%;
       #images-div {
         display: none;
       }
+      .project__header {
+        text-align: center;
+      }
       .project__technologies {
-        width: 70%;
+        max-width: 100%;
+        margin: 0;
         p {
-          font-size: 14px;
+          font-size: 0.75rem;
         }
       }
       .project__display__image {
-        width: 100%;
-        max-height: 300px;
-        margin-bottom: 50px;
+        padding: 0;
+        max-width: 300px;
+        max-height: 200px;
         img {
-          width: 90%;
+          max-width: 350px;
+          max-height: 250px;
         }
       }
       .buttons {
@@ -339,84 +378,41 @@ nav {
     }
   }
   .experience__container {
-    height: 40vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
     .experience__ga {
+      min-width: 100%;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
       .logos {
         min-width: 100%;
       }
       .experience__ga__content {
-        min-width: 100%;
-        padding: 0.5em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: left;
+        padding: 0;
+        min-width: 90%;
       }
     }
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .experience__container {
-    height: 43vh;
-  }
-  .about__container {
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .about__column-left {
-      width: 100%;
-    }
-    .about__column-right {
-      width: 100%;
-    }
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .about__container {
-    height: 85vh;
-  }
-  .projects__container {
-    .project__technologies {
-      font-size: 12px;
-    }
-  }
-  .project__display__image {
-    img {
-      max-height: 250px;
-    }
-  }
-  .experience__container {
-    height: 46vh;
-  }
-}
-
-@media only screen and (max-width: 420px) {
-  .experience__container {
-    height: 55vh;
-  }
-
-  .project__display__image {
-    img {
-      max-height: 200px;
-    }
-  }
-}
-
-@media only screen and (max-width: 360px) {
-  .about__container {
-    height: 95vh;
-  }
+@media only screen and (max-width: 350px) {
   nav {
-    margin-bottom: 10px;
     .navbar-item {
-      font-size: 12px;
+      font-size: 0.7rem;
     }
   }
-  .seperator {
-    display: none;
-  }
-  .buttons {
-    margin-bottom: 40px;
+  .project__display__image {
+    width: 280px;
+
+    img {
+      width: 280px;
+      height: 140px;
+    }
   }
 }

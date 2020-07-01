@@ -38,7 +38,7 @@ function Projects() {
       visitOrPlay: 'Visit'
     },
     {
-      title: 'Project 2 - World News & Weather',
+      title: 'Project 2 - Hackathon',
       github: 'https://github.com/EdwardGillard/SEI-project-two',
       deployedLink: 'https://news-and-weather-worldwide.netlify.app/',
       deployedName: 'News & Weather',
@@ -49,7 +49,7 @@ function Projects() {
       visitOrPlay: 'Visit'
     },
     {
-      title: 'Project 1 - Snake (only its Drake)',
+      title: 'Project 1 - Drake',
       github: 'https://github.com/EdwardGillard/SEI-project-one-Game',
       deployedLink: 'https://edwardgillard.github.io/SEI-project-one-Game/',
       deployedName: 'Drake Game',
@@ -87,7 +87,7 @@ function Projects() {
         <div className="projects__directions" >
           {count > 0 && <h1 onClick={lastProject}> {'<'} </h1>}
         </div>
-        <div className="projects__main__display" >
+        <div className="projects__main__display">
           <Swipeable onSwipedRight={lastProject} onSwipedLeft={nextProject} preventDefaultTouchmoveEvent={true}>
             <Carousel
               project={projects[count]}

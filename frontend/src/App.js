@@ -5,34 +5,19 @@ import Experience from './components/Experience'
 import AboutMe from './components/AboutMe'
 import Projects from './components/Projects'
 import ContactFooter from './components/ContactFooter'
+import Divider from './components/Divider'
 
 function App() {
   return (
     <div className="Main">
       <Navbar />
-      <div className="seperator">
-        <hr id="one" />
-        <hr id="two" />
-        <hr id="three" />
-      </div>
+      <Divider />
       <AboutMe />
-      <div className="seperator">
-        <hr id="one" />
-        <hr id="two" />
-        <hr id="three" />
-      </div>
+      <Divider />
       <Projects />
-      <div className="seperator">
-        <hr id="one" />
-        <hr id="two" />
-        <hr id="three" />
-      </div>
+      <Divider />
       <Experience />
-      <div className="seperator">
-        <hr id="one" />
-        <hr id="two" />
-        <hr id="three" />
-      </div>
+      <Divider />
       <ContactFooter />
     </div>
   )

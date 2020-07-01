@@ -20,9 +20,9 @@ function Carousel(props) {
           {project.technologies.map(tech => <p key={tech}>{tech}</p>)}
         </div>
       </div>
-      <div>
+      <div className="project__display__image__section">
         <div className="project__display__image">
-          <img src={project.display} alt={project.title} />
+          <img src={project.display} alt={project.title}/>
         </div>
         <div className="project__images" id="images-div">
           {project.media.map(image => (
