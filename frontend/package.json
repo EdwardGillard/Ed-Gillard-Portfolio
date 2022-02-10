@@ -7,7 +7,7 @@
     "analytics": "^0.5.1",
     "eslint-plugin-react": "^7.18.3",
     "netlify-cli": "^2.54.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-ga": "^3.0.0",
